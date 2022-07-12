@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box {
+  width: 120px;
+  height: 100px;
+  background-color: rgb(117, 189, 189);
+  margin: 50px;
+}
+
+.box h3 {
+  white-space: nowrap; /* کنترل شکسته شدن یا نشدن متن */
+  overflow: hidden; /* نشان دادن یا مخفی کردن متن سرریز شده */
+  /* کد زیر فقط در صورتی که دو ویژگی بالا تعریف شده باشند کار میکند */
+  text-overflow: ellipsis; /* کنترل نحوه (استایل) سرریز شدن متن (کد روبرو آخر متن سه نقطه اضافه میکند)*/
+}
