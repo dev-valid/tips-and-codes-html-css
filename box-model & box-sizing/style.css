@@ -1,0 +1,60 @@
+.box-1 {
+  background-color: #2196f3;
+  width: 200px;
+  height: 70px;
+  border: 5px solid black;
+  padding: 10px;
+}
+/* 
+ است (width 200px + padding: 20px + border: 10) 230px در باکس بالا عرض عنصر مجموعا
+*/
+
+.box-2 {
+  background-color: #2196f3;
+  width: 200px;
+  height: 70px;
+  border: 5px solid black;
+  padding: 15px;
+}
+/* 
+ است (width 200px + padding: 30px + border: 10) 240px در باکس بالا عرض عنصر مجموعا
+*/
+
+/* 
+ آشنا شدیم css در دو مثال بالا با شیوه محاسبه اندازه عناصر به صورت عادی در
+ قرار داشت content-box در حالت پیش فرض مرورگر یعنی box-sizing در مثال های بالا ویژگی
+ که در دو مثال زیر استفاده شده است (border-box) مقدار دیگری نیز دارد box-sizing حالا ویژگی
+*/
+
+.box-3 {
+  background-color: #2196f3;
+  width: 200px;
+  height: 70px;
+  border: 5px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box-4 {
+  background-color: #2196f3;
+  width: 200px;
+  height: 70px;
+  border: 5px solid black;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* 
+ border-box همان طور که در خروجی واضح است تفاوت دو مثال بالا با دو مثال قبل این است که در حالت
+ است width روی اندازه اصلی عنصر تاثیر نمیگذارن و اندازه عرض عنصر همان اندازه border و padding اندازه ویژگی های
+*/
+
+/* 
+ استفاده کنیم و برای اعمال این ویژگی روی همه عناصر از روش زیر استفاده کنیم box-sizing: border-box; بهتر است همیشه از 
+*/
+
+/* 
+* {
+  box-sizing: border-box;
+}
+*/
